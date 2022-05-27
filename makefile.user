@@ -1,0 +1,9 @@
+CC = gcc
+CFLAGS = -Wall
+TARGET = test
+
+all: $(TARGET).c
+	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c
+
+clean:
+	rm -f $(TARGET)
